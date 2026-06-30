@@ -1,0 +1,295 @@
+/* =====================================================
+   OpenCV Vision Studio - Professional Dashboard
+   ===================================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =====================================================
+   GLOBAL
+   ===================================================== */
+
+html,
+body,
+[class*="css"]{
+    font-family: 'Poppins', sans-serif;
+}
+
+.stApp{
+    background:#f5f7fb;
+}
+
+/* =====================================================
+   SIDEBAR
+   ===================================================== */
+
+section[data-testid="stSidebar"]{
+    background:linear-gradient(180deg,#0f172a,#1e293b);
+    border-right:3px solid #2563eb;
+}
+
+/* Sidebar headings */
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3{
+    color:white !important;
+    font-weight:700;
+}
+
+/* Sidebar labels */
+
+section[data-testid="stSidebar"] label{
+    color:white !important;
+    font-weight:600;
+}
+
+/* Sidebar markdown */
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] li{
+    color:#dbeafe !important;
+}
+
+/* Divider */
+
+section[data-testid="stSidebar"] hr{
+    border:1px solid rgba(255,255,255,.2);
+}
+
+/* =====================================================
+   SELECTBOX
+   ===================================================== */
+
+.stSelectbox label{
+    color:white !important;
+}
+
+.stSelectbox div[data-baseweb="select"]{
+    background:white !important;
+    border:2px solid #3b82f6 !important;
+    border-radius:12px !important;
+    min-height:45px;
+}
+
+.stSelectbox div[data-baseweb="select"] span{
+    color:#111827 !important;
+    font-size:16px;
+    font-weight:500;
+}
+
+.stSelectbox input{
+    color:#111827 !important;
+}
+
+div[role="listbox"]{
+    background:white !important;
+}
+
+div[role="option"]{
+    color:#111827 !important;
+    background:white !important;
+}
+
+div[role="option"]:hover{
+    background:#dbeafe !important;
+}
+
+/* =====================================================
+   TEXT INPUT
+   ===================================================== */
+
+.stTextInput input{
+    background:white !important;
+    color:#111827 !important;
+    border-radius:12px;
+    border:2px solid #3b82f6;
+}
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+.stButton>button{
+
+    width:100%;
+
+    background:linear-gradient(90deg,#2563eb,#06b6d4);
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.stButton>button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
+}
+
+/* =====================================================
+   DOWNLOAD BUTTON
+   ===================================================== */
+
+.stDownloadButton>button{
+
+    width:100%;
+
+    background:linear-gradient(90deg,#10b981,#22c55e);
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px;
+
+    font-weight:600;
+}
+
+.stDownloadButton>button:hover{
+
+    box-shadow:0 8px 20px rgba(16,185,129,.35);
+}
+
+/* =====================================================
+   FILE UPLOADER
+   ===================================================== */
+
+section[data-testid="stFileUploader"]{
+
+    border:2px dashed #2563eb;
+
+    border-radius:15px;
+
+    background:white;
+
+    padding:15px;
+}
+
+/* =====================================================
+   SUCCESS / INFO
+   ===================================================== */
+
+.stSuccess,
+.stInfo,
+.stWarning,
+.stError{
+
+    border-radius:12px;
+}
+
+/* =====================================================
+   IMAGES
+   ===================================================== */
+
+img{
+
+    border-radius:15px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+/* =====================================================
+   VIDEO
+   ===================================================== */
+
+video{
+
+    border-radius:15px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+/* =====================================================
+   HEADINGS
+   ===================================================== */
+
+h1{
+
+    color:#1e3a8a;
+
+    font-weight:700;
+}
+
+h2{
+
+    color:#2563eb;
+
+    font-weight:600;
+}
+
+h3{
+
+    color:#2563eb;
+}
+
+/* =====================================================
+   METRICS
+   ===================================================== */
+
+div[data-testid="metric-container"]{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* =====================================================
+   SCROLLBAR
+   ===================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#dbeafe;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b82f6;
+
+    border-radius:20px;
+}
+
+/* =====================================================
+   HIDE STREAMLIT DEFAULT MENU
+   ===================================================== */
+
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+/* Keep header and sidebar toggle */
+header[data-testid="stHeader"]{
+    background: transparent !important;
+}
+
+/* Pull page upward */
+.main .block-container{
+    padding-top: 0.8rem !important;
+}
